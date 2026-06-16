@@ -5,6 +5,8 @@
   * Windows Server 2025 Eval installed successfully. 
   * ![Initial Setup](initial-setup.png)
   * ![Disk Config](DISK-CONFIG.png)
+  * * **Troubleshooting:** * Encountered "Error selecting partition" during installation.
+  * **Fix:** Deleted the existing partition and created a new one to re-initialize the disk as a basic partition.
 
 * **Next Steps:**
   * Configure Static IP.

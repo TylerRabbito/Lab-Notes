@@ -5,5 +5,5 @@
     * Created VM `DC01` using Windows Server 2025 Evaluation ISO.
     * Configured VM hardware: 4GB RAM, 2 CPUs, 50GB storage.
 * **Screenshots:**
-    ![VM Initial Setup](initial%20setup.png)
+    ![VM Initial Setup](initial-setup.png)
 * **Status:** VM is currently installing the OS via unattended setup.

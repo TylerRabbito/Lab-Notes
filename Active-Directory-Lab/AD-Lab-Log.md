@@ -1,9 +1,11 @@
-### 📅 Entry: 2026-06-16
-* **Objective:** Initial setup of the Active Directory lab environment.
-* **Actions:**
-    * Installed VirtualBox 7.x (Host: Windows).
-    * Created VM `DC01` using Windows Server 2025 Evaluation ISO.
-    * Configured VM hardware: 4GB RAM, 2 CPUs, 50GB storage.
-* **Screenshots:**
-    ![VM Initial Setup](initial-setup.png)
-* **Status:** VM is currently installing the OS via unattended setup.
+## Active Directory Lab Progress
+
+* **Initial Setup (2026-06-16):**
+  * VM (DC01) created with 4GB RAM, 2 CPUs, 50GB disk.
+  * Windows Server 2025 Eval installed successfully. 
+  * ![Initial Setup](initial-setup.png)
+  * ![Disk Config])(DISK-CONFIG.png)
+
+* **Next Steps:**
+  * Configure Static IP.
+  * Install AD DS Role.

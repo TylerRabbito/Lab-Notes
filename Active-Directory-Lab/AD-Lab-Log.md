@@ -37,18 +37,21 @@
 
 * **Directory Structure Setup:**
   * **Objective:** Create an organized directory structure for lab resources using Organizational Units (OUs).
+  * **Troubleshooting:**
+    * Encountered "bad syntax" error in [Screenshot 2026-06-17 134032.png].
+    * **Fix:** Corrected path syntax to use `DC=` and `,` correctly.
   * **Commands:**
 ```powershell
     New-ADOrganizationalUnit -Name "Labs" -Path "DC=home,DC=lab"
     New-ADOrganizationalUnit -Name "Users" -Path "OU=Labs,DC=home,DC=lab"
     New-ADOrganizationalUnit -Name "Workstations" -Path "OU=Labs,DC=home,DC=lab"
     ```
-
-## Project Status
-* **Status:** Paused (2026-06-17).
-* **Summary:** Successfully deployed Windows Server 2025, promoted to Domain Controller, and configured core network/OU services. 
-* **Reasoning:** Project paused to pivot focus towards Help Desk-specific workflows, including ITSM ticketing systems and remote administration technical support.
   * **Status:** Organizational Units (OUs) created successfully, establishing the following hierarchy: 
     * Labs (Root)
       * Users
       * Workstations
+
+## Project Status
+* **Status:** Paused (2026-06-17).
+* **Summary:** Successfully deployed Windows Server 2025, promoted to Domain Controller, and configured core network/OU services. 
+* **Reasoning:** Project paused to pivot focus towards Help Desk specific workflows, including ITSM ticketing systems and remote administration technical support.

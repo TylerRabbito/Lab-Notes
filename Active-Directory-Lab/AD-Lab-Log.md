@@ -18,10 +18,8 @@
   * Installed AD-Domain-Services role via PowerShell.
   * Command: `Install-WindowsFeature AD-Domain-Services -IncludeManagementTools`
   * Status: Success.
-  * ![Installation Progress](Screenshot-2026-06-16-202133.png)
-  * ![Installation Result](Screenshot-2026-06-16-202544.png)
+  * ![Installation Progress](AD-Domain.png)
 
 * **Domain Promotion:**
   * Promoted server to Domain Controller for domain: `home.lab`
   * Command: `Install-ADDSForest -DomainName home.lab`
-  * ![Promotion Confirmation](Domain-Promotion.png)

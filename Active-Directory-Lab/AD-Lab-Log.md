@@ -23,5 +23,5 @@
 * **Domain Promotion:**
   * Promoted server to Domain Controller for domain: `home.lab`
   * Command: `Install-ADDSForest -DomainName home.lab`
-  * Status: In Progress/Rebooting.
-  * ![Promotion Confirmation](Domain-Promotion.png)
+  * Status: Success. Server is now DC01.home.lab
+  * ![Promotion Confirmation](home-lab.png)

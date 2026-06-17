@@ -9,7 +9,9 @@
   * **Fix:** Deleted the existing partition and created a new one to re-initialize the disk as a basic partition.
  
 
-  * **Network Configuration:**
+
+
+   * **Network Configuration:**
   * Assigned Static IP: 10.0.2.10
   * Set Primary DNS: 127.0.0.1 (Local loopback)
   * ![Network Settings](NETWORK.png) 

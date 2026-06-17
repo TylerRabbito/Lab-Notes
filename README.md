@@ -12,4 +12,4 @@ This repository contains the documentation, logs, and troubleshooting steps for 
 * Created an organized Organizational Unit (OU) structure.
 
 ## Lab Documentation
-You can find the full step-by-step breakdown in the [AD-Lab-Log.md](AD-Lab-Log.md) file.
+You can find the full step-by-step breakdown in the [AD-Lab-Log.md](Active-Directory-Lab/AD-Lab-Log.md) file.

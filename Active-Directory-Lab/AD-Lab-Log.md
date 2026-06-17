@@ -43,6 +43,11 @@
     New-ADOrganizationalUnit -Name "Users" -Path "OU=Labs,DC=home,DC=lab"
     New-ADOrganizationalUnit -Name "Workstations" -Path "OU=Labs,DC=home,DC=lab"
     ```
+
+## Project Status
+* **Status:** Paused (2026-06-17).
+* **Summary:** Successfully deployed Windows Server 2025, promoted to Domain Controller, and configured core network/OU services. 
+* **Reasoning:** Project paused to pivot focus towards Help Desk-specific workflows, including ITSM ticketing systems and remote administration technical support.
   * **Status:** Organizational Units (OUs) created successfully, establishing the following hierarchy: 
     * Labs (Root)
       * Users

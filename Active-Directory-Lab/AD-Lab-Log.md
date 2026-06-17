@@ -25,3 +25,18 @@
   * Command: `Install-ADDSForest -DomainName home.lab`
   * Status: Success. Server is now DC01.home.lab
   * ![Promotion Confirmation](home-lab.png)
+ 
+  * ### Domain Controller Verification
+* **Objective:** Verify the Active Directory Domain Services installation and forest health.
+* **Command:** `Get-ADDomain -Identity home.lab`
+* **Result:** Successfully confirmed domain mode and infrastructure roles.
+* **Screenshot:**
+![Domain Verification](Get-ADDomain.png)
+
+### Directory Structure Setup
+* **Objective:** Create an organized directory structure for lab resources.
+* **Commands:**
+  * `New-ADOrganizationalUnit -Name "Labs" -Path "DC=home,DC=lab"`
+  * `New-ADOrganizationalUnit -Name "Users" -Path "OU=Labs,DC=home,DC=lab"`
+  * `New-ADOrganizationalUnit -Name "Workstations" -Path "OU=Labs,DC=home,DC=lab"`
+* **Status:** Organizational Units created successfully.

@@ -1,8 +1,8 @@
-## Active Directory Lab Progress
+# Active Directory Lab Progress
 
 * **Initial Setup (2026-06-16):**
   * VM (DC01) created with 4GB RAM, 2 CPUs, 50GB disk.
-  * Windows Server 2025 Eval installed successfully. 
+  * Windows Server 2025 Eval installed successfully.
   * ![Initial Setup](initial-setup.png)
   * ![Disk Config](DISK-CONFIG.png)
   * **Troubleshooting:**
@@ -25,18 +25,25 @@
   * Command: `Install-ADDSForest -DomainName home.lab`
   * Status: Success. Server is now DC01.home.lab
   * ![Promotion Confirmation](home-lab.png)
- 
-  * ### Domain Controller Verification
-* **Objective:** Verify the Active Directory Domain Services installation and forest health.
-* **Command:** `Get-ADDomain -Identity home.lab`
-* **Result:** Successfully confirmed domain mode and infrastructure roles.
-* **Screenshot:**
-![Domain Verification](Get-ADDomain.png)
 
-### Directory Structure Setup
-* **Objective:** Create an organized directory structure for lab resources.
-* **Commands:**
-  * `New-ADOrganizationalUnit -Name "Labs" -Path "DC=home,DC=lab"`
-  * `New-ADOrganizationalUnit -Name "Users" -Path "OU=Labs,DC=home,DC=lab"`
-  * `New-ADOrganizationalUnit -Name "Workstations" -Path "OU=Labs,DC=home,DC=lab"`
-* **Status:** Organizational Units created successfully.
+* **Domain Controller Verification:**
+  * **Objective:** Verify the Active Directory Domain Services installation and forest health via PowerShell.
+  * **Command:** `Get-ADDomain -Identity home.lab`
+  * **Result:** Successfully confirmed domain mode and infrastructure roles.
+  * **Screenshots:**
+    * ![SConfig Status](Screenshot 2026-06-17 131744.png)
+    * ![Domain Verification](Screenshot 2026-06-17 131919.png)
+    * ![Get-ADDomain Output](Get-ADDomain.png)
+
+* **Directory Structure Setup:**
+  * **Objective:** Create an organized directory structure for lab resources using Organizational Units (OUs).
+  * **Commands:**
+```powershell
+    New-ADOrganizationalUnit -Name "Labs" -Path "DC=home,DC=lab"
+    New-ADOrganizationalUnit -Name "Users" -Path "OU=Labs,DC=home,DC=lab"
+    New-ADOrganizationalUnit -Name "Workstations" -Path "OU=Labs,DC=home,DC=lab"
+    ```
+  * **Status:** Organizational Units (OUs) created successfully, establishing the following hierarchy: 
+    * Labs (Root)
+      * Users
+      * Workstations

@@ -5,13 +5,17 @@
   * Windows Server 2025 Eval installed successfully. 
   * ![Initial Setup](initial-setup.png)
   * ![Disk Config](DISK-CONFIG.png)
-  * * **Troubleshooting:** * Encountered "Error selecting partition" during installation.
-  * **Fix:** Deleted the existing partition and created a new one to re-initialize the disk as a basic partition.
- 
+  * **Troubleshooting:**
+    * Encountered "Error selecting partition" during installation.
+    * **Fix:** Deleted the existing partition and created a new one to re-initialize the disk as a basic partition.
 
-
-
-   * **Network Configuration:**
+* **Network Configuration:**
   * Assigned Static IP: 10.0.2.10
   * Set Primary DNS: 127.0.0.1 (Local loopback)
-  * ![Network Settings](NETWORK.png) 
+  * ![Network Settings](NETWORK.png)
+
+* **Role Installation:**
+  * Installed AD-Domain-Services role via PowerShell.
+  * Command: `Install-WindowsFeature AD-Domain-Services -IncludeManagementTools`
+  * Status: Success.
+  * ![Installation Progress](AD-Domain.png)

@@ -7,7 +7,8 @@
   * ![Disk Config](DISK-CONFIG.png)
   * * **Troubleshooting:** * Encountered "Error selecting partition" during installation.
   * **Fix:** Deleted the existing partition and created a new one to re-initialize the disk as a basic partition.
-
-* **Next Steps:**
-  * Configure Static IP.
-  * Install AD DS Role.
+ 
+  * **Network Configuration:**
+  * Assigned Static IP: 10.0.2.10
+  * Set Primary DNS: 127.0.0.1 (Local loopback)
+  * ![Network Settings](NETWORK.png) 

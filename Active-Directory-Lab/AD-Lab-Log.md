@@ -54,4 +54,4 @@
 ## Project Status
 * **Status:** Paused (2026-06-17).
 * **Summary:** Successfully deployed Windows Server 2025, promoted to Domain Controller, and configured core network/OU services. 
-* **Reasoning:** Project paused to pivot focus towards Help Desk specific workflows, including ITSM ticketing systems and remote administration technical support.
+* **Reasoning:** Shifted focus toward building practical Help Desk experience, including ITSM ticketing systems, remote administration, and day-to-day IT support workflows, before returning to advanced Active Directory topics.
